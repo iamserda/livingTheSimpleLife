@@ -184,9 +184,9 @@ article.container {
 .author-pic {
     background-image: url('/img/author.jpg');
 } */
-/* .aside {
+.aside {
     border: 1px solid red;
-} */
+}
 
 .aside>.container {
     padding: 1em;
@@ -220,12 +220,7 @@ footer>p {
     font-weight: bold;
 }
 
-.blogger {
-    margin-bottom: 1em;
-}
-
 .copyright {
-
-    font-size: 12px;
+    font-size: 8px;
     color: hotpink;
 }

@@ -184,9 +184,9 @@ article.container {
 .author-pic {
     background-image: url('/img/author.jpg');
 } */
-/* .aside {
+.aside {
     border: 1px solid red;
-} */
+}
 
 .aside>.container {
     padding: 1em;
