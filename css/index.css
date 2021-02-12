@@ -1,0 +1,324 @@
+* {
+  box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #707070;
+  font-size: 1rem;
+  font-family: 'Ubuntu';
+}
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color:#f8f8f8;
+    z-index: 999;
+    margin-bottom: 1em;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.8);
+    padding: 1.5em 1em;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Lora", serif;
+  color: #143774;
+  font-weight: normal;
+}
+
+p {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+nav ul li {
+  list-style: none;
+}
+nav ul{
+    margin-left: none;
+}
+
+a {
+  color: #1792d2;
+}
+
+img {
+  width: 100%;
+}
+
+/* Classes Styles */
+
+/* contains the entire website GENERICS - LAYOUT*/
+.root-container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  min-width: 320px;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Brand logo, Navigation Links*/
+/* Header Style STARTS*/
+.navbar{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+/* LOGO */
+.brand-logo{
+    display: flex;
+    flex-flow: column nowrap;
+   
+}
+.brand-logo,
+.nav-container{
+    margin: 0 auto;
+    padding: 1em;
+}
+.brand-logo>*{
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    
+}
+
+header .title {
+  font-size: 2rem;
+  font-weight: normal;
+  font-family: "Lora", serif;
+  width: fit-content;
+  margin: 0 auto;
+}
+header .subtitle{
+  width: fit-content;
+  margin: 0 auto;
+  text-transform: uppercase;
+  color: #1792d2;
+  font-size: 0.7em;
+  letter-spacing: 2.4;
+  margin-top: 0.25em;
+}
+
+/* NAV LINKS */
+.navigation{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.nav-item {
+  /* border: 1px solid red; */
+  min-height: 30px;
+  min-width: 50px;
+  margin-top: 0.25em;
+}
+
+.nav-item>a {
+  display: block;
+  width: 100%;
+  padding: 0.25em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #707070;
+  align-self: auto;
+}
+
+.navigation li a:hover,
+.navigation li a:focus {
+  color: #1792d2;
+  background-color:rgba(0,0,0,0.05);
+  border-bottom: 2px solid #1792d2;
+}
+
+.current,
+.navigation a:active {
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #707070;
+}
+
+.navigation,
+.subtitle {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+}
+
+.btn-menu{
+    display:none;
+}
+/* Header Style END*/
+
+/* content style  START*/
+.content-container {
+  display: flex;
+  flex-flow: column nowrap;
+  max-width: 960px;
+  width: 95%;
+  margin: 0 auto;
+}
+main .container{
+  display: flex;
+  flex-flow: column;
+}
+article.container{
+  margin: 2em auto 1em;
+  padding: 0 0 1em;
+}
+
+promo>*{
+  order: 0;
+}
+.promo .photo,
+.promo .date{
+  order: -1
+}
+
+.date{
+  margin: 0.5em 0;
+  font-size: 0.8rem;
+}
+.bold-intro{
+  font-weight: bold;
+}
+.link-to-article{
+  color: #1792d2;
+  text-transform: uppercase;
+  letter-spacing: 2.4;
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration: none;
+  min-height: 30px;
+}
+.link-to-article:hover{
+  color: #1792d2;
+  border-bottom: #1792d2 4px solid;
+}
+.promo{
+  border-bottom: 2px solid #707070;
+  padding-bottom: 1em;
+  margin: 1.5em auto 0;
+}
+
+article .photo{
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+}
+article .title{
+  margin: 0.5em 0;
+}
+article .text{
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+.post .meta,
+.post .data{
+  display: flex;
+  flex-flow: column;
+}
+.post .meta{
+  position: relative;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.post .date{
+  width: 30%;
+  position: relative;
+  top: 1.5em;
+  border: 1px solid red;
+}
+.data .title{
+  position: relative;
+  top: -1em;
+  width: 60%;
+  border: 1px solid red;
+}
+/* content style ENDS */
+
+/* footer style */
+.footer {
+  background-color: #143774;
+  margin-top: 2em;
+  padding: 3em 0;
+  bottom: 0;
+}
+
+footer p {
+  font-size: 1.25rem;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+.blogger {
+  margin-bottom: 1em;
+}
+
+.copyright {
+  font-size: 12px;
+  color: hotpink;
+}
+
+/* MOBILE SM */
+@media (max-width:330px){
+  .title{
+    font-size: 1.5rem;
+    width: 100%;
+  }
+  .subtitle{
+    font-size: 0.5rem;
+    width: 100%;
+  }
+  .brand-logo{
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
+
+/*MOBILE MD */
+@media (min-width: 331px) and (max-width:375px){
+  .title{
+    font-size: 1.7rem;
+    width: 100%;
+  }
+  .subtitle{
+    font-size: 0.6rem;
+    width: 100%;
+  }
+  .brand-logo{
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
+
+/* MOBILE LG */
+@media (min-width: 376px) and (max-width:425px){
+  .title{
+    font-size: 2rem;
+    width: 100%;
+  }
+  .subtitle{
+    font-size: 0.7rem;
+    width: 100%;
+  }
+  .brand-logo{
+    width: fit-content;
+    margin: 0 auto;
+  }
+}

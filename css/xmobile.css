@@ -1,5 +1,7 @@
 /* Responsive Design: Mobile First */
 /* Between 500px and 720px, the following is true */
+
+
 @media screen and (min-width: 0px) and (max-width: 720px) {
     .root-container {
         max-width: 720px;
@@ -158,7 +160,9 @@
         object-fit: cover;
     }
 }
+*/
 
+/*
 @media screen and (min-width: 721px) and (max-width: 850px) {
 
     .root-container {
@@ -211,3 +215,4 @@
     }
 
 }
+
