@@ -1,5 +1,13 @@
 # Scrimba Front-end Dev Path
 
+## GitHub.io
+https://iamserda.github.io/livingTheSimpleLife
+
+
+## Codepen.io
+Coming Soon?
+
+
 ## Module 5 - Project 1 - A RWD personal blog for a fictional character named Jonathan Bloggs.
 
 Adobe XD design was created by Kevin Powell:
